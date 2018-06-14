@@ -1,0 +1,26 @@
+{
+  "name": "react-native-android-snackbar",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  },
+  "description": "A SnackBar component for Android",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebylito/react-native-android-snackbar.git"
+  },
+  "keywords": [
+    "react-native",
+    "snackbar",
+    "snac-bar",
+    "android"
+  ],
+  "author": "Welington da Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebylito/react-native-android-snackbar/issues"
+  },
+  "homepage": "https://github.com/thebylito/react-native-android-snackbar#readme"
+}

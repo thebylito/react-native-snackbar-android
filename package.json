@@ -1,6 +1,6 @@
 {
   "name": "react-native-snackbar-android",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "dependencies": {
     "prop-types": "^15.6.1"

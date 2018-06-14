@@ -1,1 +1,1 @@
-"# react-native-android-snackbar" 
+"# react-native-snackbar-android" 

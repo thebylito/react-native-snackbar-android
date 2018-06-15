@@ -38,6 +38,8 @@ SnackBar.propTypes = {
   message: PropTypes.string.isRequired,
   duration: PropTypes.number,
   backgroundColor: PropTypes.string,
+  onShow: PropTypes.func,
+  onHide: PropTypes.func,
   action: PropTypes.shape({
     title: PropTypes.string.isRequired,
     onPress: PropTypes.func.isRequired,

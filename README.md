@@ -1,1 +1,86 @@
-"# react-native-snackbar-android" 
+# react-native-snackbar-android
+
+react-native-snackbar-android is a [React Native](http://facebook.github.io/react-native/) library for Snackbar on Android.
+
+### Android Only
+
+<div>
+<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenShot1.jpg" height="600">
+<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenShot2.jpg" height="600">
+<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenShot3.jpg" height="600">
+</div>
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Example](#example)
+- [API](#api)
+- [License](#license)
+
+## Installation
+
+`$ npm install react-native-snackbar-android --save`
+
+### Automatic Configuration
+
+`$ react-native link react-native-snackbar-android`
+
+### Manual Configuration
+
+#### Android
+
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
+  - Add `import com.thebylito.reactnativesnackbar.ReactNativeSnackBarPackage;` to the imports at the top of the file
+  - Add `new ReactNativeSnackBarPackage()` to the list returned by the `getPackages()` method
+2. Append the following lines to `android/settings.gradle`:
+  	```
+    include ':react-native-snackbar-android'
+    project(':react-native-snackbar-android').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-snackbar-android/android')
+  	```
+3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+  	```
+    compile project(':react-native-snackbar-android')
+  	```
+4. Edit infos in `android/app/build.gradle`:
+    ```
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
+    targetSdkVersion 27
+  	```
+5. Add Maven to `android/build.gradle`:
+    ```
+    buildscript {
+        repositories {
+           ...
+                maven {
+                    url 'https://maven.google.com/'
+                    name 'Google'
+                }
+            ...
+        }
+    ```
+    AND
+    ```
+    allprojects {
+        repositories {
+        ...
+            maven {
+                url 'https://maven.google.com/'
+                name 'Google'
+            }
+        ...
+        }
+    }
+    ```
+
+## Example
+
+-TO-DO
+
+## API
+
+-TO-DO
+
+## License
+
+MIT

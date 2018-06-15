@@ -5,9 +5,9 @@ react-native-snackbar-android is a [React Native](http://facebook.github.io/reac
 ### Android Only
 
 <div>
-<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenShot1.jpg" height="600">
-<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenShot2.jpg" height="600">
-<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenShot3.jpg" height="600">
+<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenshot1.png" height="600">
+<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenshot2.png" height="600">
+<img src="https://github.com/thebylito/react-native-snackbar-android/raw/master/screenshots/screenshot3.png" height="600">
 </div>
 
 ## Table of Contents

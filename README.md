@@ -41,7 +41,7 @@ react-native-snackbar-android is a [React Native](http://facebook.github.io/reac
   	```
     compile project(':react-native-snackbar-android')
   	```
-4. Edit infos in `android/app/build.gradle`:
+4. Edit settings in `android/app/build.gradle`:
     ```
     compileSdkVersion 27
     buildToolsVersion "27.0.1"
@@ -75,11 +75,77 @@ react-native-snackbar-android is a [React Native](http://facebook.github.io/reac
 
 ## Example
 
--TO-DO
+**Android Implementation**
+```javascript
+import React, { Component } from 'react';
+import SnackBar, { duration } from 'react-native-snackbar-android'
+import { Text, View } from 'react-native';
+
+export default class App extends Component {
+  componentDidMount() {
+    SnackBar.show({
+      message: 'Hello Word',
+      backgroundColor: 'red',
+      duration: duration.LENGTH_LONG,
+      onShow: () => { console.log('SHOW') },
+      onHide: () => { console.log('HIDE') },
+      action: {
+        title: 'My Button',
+        txtColor: 'white',
+        onPress: () => { alert('You Press ME!') }
+      }
+    })
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>
+        Hello Word
+        </Text>
+      </View>
+    );
+  }
+}
+```
 
 ## API
 
--TO-DO
+### `show(options)`: (Android)
+Show SnackBar
+```
+{
+  message: String with text to show,
+  duration: can be int number in miliseconds or import {duration}, // Required
+  backgroundColor: color of background color of SnackBar, // No required
+  onShow: Function on Show Snackbar, // No required
+  onHide: Function on Hide Snackbar, // No required
+  action: { // No required
+    title: String with text to button, // Required
+    onPress: Function on click button, // No required
+    txtColor: The color of button text, // No required
+  },
+};
+```
+
+```javascript
+    SnackBar.show({
+      message: 'Hello Word'
+    })
+```
+
+## OR
+
+```javascript
+    SnackBar.show({
+      message: 'Hello Word',
+      backgroundColor: 'red',
+      action: {
+        title: 'My Button',
+        onPress: () => { alert('You Press ME!') }
+      }
+    })
+```
 
 ## License
 

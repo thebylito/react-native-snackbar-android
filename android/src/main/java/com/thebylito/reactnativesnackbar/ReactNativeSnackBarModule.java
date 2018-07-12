@@ -66,8 +66,14 @@ public class ReactNativeSnackBarModule extends ReactContextBaseJavaModule {
         final Snackbar mySnack = Snackbar.make(view, message, duration);
         if (options.hasKey("backgroundColor")) {
             String backgroundColor = options.getString("backgroundColor");
+            Integer snackBarBackgroundColor;
+            try {
+                snackBarBackgroundColor  =  Color.parseColor(String.valueOf(backgroundColor));
+            } catch (Exception e) {
+                snackBarBackgroundColor = Color.GRAY;
+            }
             View snackBarView = mySnack.getView();
-            snackBarView.setBackgroundColor(Color.parseColor(backgroundColor));
+            snackBarView.setBackgroundColor(snackBarBackgroundColor);
         }
 
         final Snackbar.Callback mCallBack = new Snackbar.Callback() {
@@ -93,7 +99,13 @@ public class ReactNativeSnackBarModule extends ReactContextBaseJavaModule {
             };
             if (actionDetails.hasKey("txtColor")) {
                 String txtColor = actionDetails.getString("txtColor");
-                mySnack.setActionTextColor(Color.parseColor(txtColor));
+                Integer btnTxtCollor;
+                try {
+                    btnTxtCollor  =  Color.parseColor(String.valueOf(txtColor));
+                } catch (Exception e) {
+                    btnTxtCollor = Color.WHITE;
+                }
+                mySnack.setActionTextColor(btnTxtCollor);
             }
             mySnack.setAction(actionDetails.getString("title"), onClickListener);
         }

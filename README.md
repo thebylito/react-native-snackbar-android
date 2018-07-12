@@ -111,7 +111,11 @@ export default class App extends Component {
 
 ## API
 
-### `show(options)`: (Android)
+PS.: Supported colors formats are: `#RRGGBB #AARRGGBB`
+
+The following names are also accepted: `red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy, olive, purple, silver, and teal.`
+
+### `show(options) :(Android)`
 Show SnackBar
 ```
 {
@@ -127,6 +131,7 @@ Show SnackBar
   },
 };
 ```
+
 
 ```javascript
     SnackBar.show({

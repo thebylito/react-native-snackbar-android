@@ -1,4 +1,6 @@
 # react-native-snackbar-android
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fthebylito%2Freact-native-snackbar-android.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fthebylito%2Freact-native-snackbar-android?ref=badge_shield)
+
 
 react-native-snackbar-android is a [React Native](http://facebook.github.io/react-native/) library for Snackbar on Android.
 
@@ -155,3 +157,6 @@ Show SnackBar
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fthebylito%2Freact-native-snackbar-android.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fthebylito%2Freact-native-snackbar-android?ref=badge_large)

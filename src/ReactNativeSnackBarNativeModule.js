@@ -28,7 +28,7 @@ const SnackBar = {
       });
     }
     if (options.message) options.message = options.message.toString();
-    if (options.action.title) options.action.title = options.action.title.toString();
+    if (options.action && options.action.title) options.action.title = options.action.title.toString();
     ReactNativeSnackBar.showSnack(options, onPressCallback);
   },
   dismiss() {

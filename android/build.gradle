@@ -31,8 +31,8 @@ repositories {
 
 dependencies {
     def supportLibVersion = safeExtGet('supportLibVersion', '27.1.1')
-    compile "com.android.support:appcompat-v7:$supportLibVersion"
-    compile "com.android.support:design:$supportLibVersion"
-    compile "com.facebook.react:react-native:+"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation "com.facebook.react:react-native:+"
 }
   

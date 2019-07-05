@@ -3,9 +3,9 @@
 package com.thebylito.reactnativesnackbar;
 
 import android.graphics.Color;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import android.view.ViewGroup;
 
 import com.facebook.react.bridge.Callback;

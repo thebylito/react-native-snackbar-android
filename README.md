@@ -1,7 +1,5 @@
 # react-native-snackbar-android
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fthebylito%2Freact-native-snackbar-android.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fthebylito%2Freact-native-snackbar-android?ref=badge_shield)
-
 react-native-snackbar-android is a [React Native](http://facebook.github.io/react-native/) library for Snackbar on Android.
 
 ### Android Only
@@ -37,11 +35,11 @@ or
 <details>
 <summary>react-native <= 0.59.0</summary>
 
-`$ yarn add react-native-snackbar-android`
+`$ yarn add react-native-snackbar-android@0.2.1`
 
 or
 
-`$ npm install react-native-snackbar-android --save`
+`$ npm install react-native-snackbar-android@0.2.1 --save`
 
 ### Automatic Configuration
 
